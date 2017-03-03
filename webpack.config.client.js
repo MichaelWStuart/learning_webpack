@@ -1,5 +1,6 @@
 const webpack = require('webpack')
 const path = require('path')
+
 module.exports = {
   devtool: 'inline-source-map',
   entry: [
@@ -27,7 +28,7 @@ module.exports = {
           { loader: 'sass-loader' }
         ],
         exclude: /(node_modules|spec|coverage)/,
-      }     
+      }
     ]
   },
   plugins: [
